@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>محمد رخا للدعاية والإعلان</title>
+<style>
+body{font-family:Arial;background:#0A1931;margin:0;text-align:center;color:#fff}
+header{background:#0A1931;padding:30px 10px;border-bottom:3px solid #FFD700}
+header h1{margin:0;font-size:30px;color:#FFD700}
+.box{background:#13294B;margin:15px;padding:15px;border-radius:15px;color:#fff}
+.box h2{color:#FFD700}
+img{width:100%;border-radius:12px}
+input,select,textarea{width:95%;padding:12px;margin:8px 0;border-radius:10px;font-size:16px}
+button{background:#25D366;color:#fff;border:0;padding:14px;width:100%;border-radius:12px;font-size:18px;font-weight:bold;margin-top:8px}
+.btn2{background:#FFD700;color:#0A1931}
+</style>
+</head>
+<body>
+<header><h1>محمد رخا</h1><p>للدعاية والإعلان - تصميمات تشد العين</p></header>
+<div class="box"><h2>شغلنا 🔥</h2><p>لوجو - بوستر - إعلان سوشيال - كارت - يافطة</p></div>
+<div class="box"><h2>اطلب تصميمك دلوقتي</h2>
+<input id="name" placeholder="اسمك">
+<select id="type"><option>لوجو</option><option>بوستر / إعلان</option><option>تصميم سوشيال ميديا</option><option>كارت شخصي</option><option>يافطة / بانر</option><option>حاجة تانية</option></select>
+<textarea id="details" placeholder="اكتب تفاصيل التصميم اللي عايزه..."></textarea>
+<button onclick="send('201060309182')">ابعت الطلب - واتساب 1</button>
+<button class="btn2" onclick="send('201555566653')">ابعت الطلب - واتساب 2</button>
+</div>
+<script>
+function send(num){
+let n=document.getElementById('name').value;
+let t=document.getElementById('type').value;
+let d=document.getElementById('details').value;
+let msg="أهلا يا أستاذ محمد، أنا "+n+" عايز تصميم: "+t+" - التفاصيل: "+d;
+window.open("https://wa.me/"+num+"?text="+encodeURIComponent(msg));
+}
+</script>
+</body>
+</html>
